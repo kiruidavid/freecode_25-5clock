@@ -97,9 +97,9 @@ function App(){
     
        <div className="row">
         <div className="col-sm-4">
-          <div className="card">
-            <div className="card-body ">
-              <h5 className="card-header text-center" id="break-label">Break Length</h5> 
+          
+            <div className="">
+              <h5 className="text-center" id="break-label">Break Length</h5> 
               <div className="card-length">
              
               <button disabled={play} className="btn btn-primary" id="break-increment" onClick={handleBreakIncrement}>+</button> 
@@ -107,13 +107,13 @@ function App(){
               <button disabled={play} className="btn btn-primary" id="break-decrement" onClick={handleBreakDecrement}>-</button> 
               </div>
               
-            </div>
+           
           </div>
           </div>
           <div className="col-sm-4">
-          <div className="card">
-            <div className="card-body">
-              <h5 className="card-header text-center" id="session-label" >Session Length</h5>
+          
+            <div className="">
+              <h5 className="text-center" id="session-label" >Session Length</h5>
               <div className="card-length">
               <button disabled={play} className="btn btn-primary" id="session-increment" onClick={handleSessionIncrement}>+</button> 
               <p className="card-text break-text" id="session-length">{sessionLength}</p>
@@ -121,15 +121,17 @@ function App(){
               </div>
               
             </div>
-          </div>
+          
         </div>
       </div> 
-      <div className="card text-center col-sm-6 m-4" > 
-        <div className="card-body">
-          <h5 className="card-header" id="timer-label">{title}</h5>
+      <div className="session-card " > 
+        <div className="">
+          <h5 className="" id="timer-label">{title}</h5>
           <p className="card-text" id="time-left">{timeFormater()}</p> 
-          <button className="btn btn-primary" id="start_stop" onClick={handlePlay}>Start/Stop</button> 
-          <button className="btn btn-primary" id="reset" onClick={handleReset}>Reset</button> 
+          <div className="sessionGrid">
+          <button className="" id="start_stop" onClick={handlePlay}>Start/Stop</button> 
+          <button className="" id="reset" onClick={handleReset}>Reset</button>  
+          </div>
          
         </div>
 

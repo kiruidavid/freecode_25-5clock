@@ -9,20 +9,43 @@ body{
 }
 
 .container h1{
-    margin: 22px;
+   text-align: center; 
+   margin: 22px;
 } 
-.card{
-   margin: 45px 34px ;
+.row{
+   display: grid; 
+   margin-left: auto; 
+   margin-right: auto; 
+   width: 40%; 
+   grid-template-columns: auto auto;
 } 
+
 .card-length{
     display: grid; 
     grid-template-columns: 50px 100px 50px; 
     justify-content: center; 
-    align-items: center; 
+    align-items: center;  
+    text-align: center;
+   
+}  
+.session-card{ 
+   position: absolute; 
+   width: 390px; 
+   height: 200px; 
+   z-index: 15; 
+   left: 40%;  
+   top: 50%;  
+   background-color: beige; 
+   margin: 2px 1px 1px -100px; 
+   text-align: center;
+
+   
    
 } 
-.break-text{  
+.sessionGrid{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    margin: 2px; 
     
-    padding-left: 12px; 
-    font-size: 20px;
 }
+
