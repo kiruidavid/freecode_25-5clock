@@ -7,52 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
     <link href="./style.css" rel="stylesheet"> 
     <title>25 + 5 Clock</title> 
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
     
     
   </head> 
   
   <body> 
-    <div class="container">
-    <h1 class="display-1 text-center">25 + 5 Clock</h1> 
-    
-    
-    <div class="row">
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-header text-center" id="break-label">Break Length</h5>
-              <p class="card-text" id="break-length">5</p> 
-              <button class="btn btn-primary" id="break-increment">+</button>
-              <button class="btn btn-primary" id="break-decrement">-</button>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-header text-center" id="session-label">Session Length</h5>
-              <p class="card-text" id="session-length">25</p> 
-              <button class="btn btn-primary" id="session-increment">+</button>
-              <button class="btn btn-primary" id="session-decrement">-</button> 
-              
-            </div>
-          </div>
-        </div>
-      </div> 
-      <div class="card text-center col-sm-6 m-4" > 
-        <div class="card-body">
-          <h5 class="card-header" id="timer-label">Session</h5>
-          <p class="card-text" id="time-left">25:00</p> 
-          <button class="btn btn-primary" id="start_stop">Start/Stop</button> 
-          <button class="btn btn-primary" id="reset">Reset</button> 
-         
-        </div>
+  <div id="app"></div>
 
-      </div>
-    </div>
-
-
+    <script type="text/babel" src="./script.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     

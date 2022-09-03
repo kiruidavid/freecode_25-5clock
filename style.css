@@ -4,7 +4,25 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     background-color: aquamarine;
 } 
+.container{
+   
+}
+
 .container h1{
     margin: 22px;
 } 
-
+.card{
+   margin: 45px 34px ;
+} 
+.card-length{
+    display: grid; 
+    grid-template-columns: 50px 100px 50px; 
+    justify-content: center; 
+    align-items: center; 
+   
+} 
+.break-text{  
+    
+    padding-left: 12px; 
+    font-size: 20px;
+}
